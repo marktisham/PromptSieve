@@ -2,9 +2,15 @@
 
 <img src="docs/PromptSieve.png" alt="PromptSieve" width="50%"/>
 
-An interactive demo of **prompt injection vulnerabilities** and **defense-in-depth** mitigations in LLM-powered agents, built with Streamlit and Google Vertex AI.
+PromptSieve demonstrates common LLM prompt attack scenarios and their effective safeguards. Approaches demonstrated include least privilege access, pre and post prompt checks, LLM code generation vs tool selection, Google's Model Armor, defense-in-depth and more.
 
-PromptSieve simulates a multi-tenant SaaS application where an AI agent answers questions about customer and invoice data. Toggle between a **Vulnerable** architecture and a **Secure** architecture, and layer on up to five independent defenses — live, in the browser, with full pipeline telemetry.
+---
+
+## Watch Video Overview
+
+<a href="https://youtu.be/93-KzFBjVAU">
+  <img alt="Watch on YouTube" src="https://img.shields.io/badge/-Watch%20Overview-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
 
 ---
 
@@ -49,14 +55,6 @@ PromptSieve simulates a multi-tenant SaaS application where an AI agent answers 
 | **Read-Only Permission** | Agent itself | Sets `PRAGMA query_only = ON` — blocks all write/destructive SQL at the database layer |
 | **Model Armor (Output)** | After the agent | Model Armor DLP sweep on the generated response to catch PII exfiltration |
 | **Post-Check LLM Evaluator** | After the agent | Inspects the agent's response for cross-tenant data using a dedicated `gemini-2.5-flash` instance |
-
----
-
-## Video Overview
-
-<a href="https://youtu.be/93-KzFBjVAU">
-  <img alt="Watch on YouTube" src="https://img.shields.io/badge/-Watch%20Overview-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
-</a>
 
 ---
 
