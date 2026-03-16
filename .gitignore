@@ -1,0 +1,16 @@
+# Environment — never commit real credentials
+.env
+
+# SQLite database files — auto-generated on first run
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# OS
+.DS_Store

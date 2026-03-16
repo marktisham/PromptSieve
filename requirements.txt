@@ -1,0 +1,6 @@
+streamlit>=1.45.0
+python-dotenv>=1.2.1
+google-cloud-aiplatform[prediction]>=1.71.0
+google-auth>=2.29.0
+requests>=2.31.0
+langchain-google-vertexai>=3.2.2
